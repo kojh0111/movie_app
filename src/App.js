@@ -10,10 +10,9 @@ function App() {
   return (
     <HashRouter>
       <Navigation />
-      {/* path="/" exact={true}가 의미하는 바는 "/"일 때만 렌더하겠음 */}
       <Route path="/" exact={true} component={Home} />
       <Route path="/about" component={About} />
-      <Route path="/movie-detail" component={Detail} />
+      <Route path="/movie/:id" component={Detail} />
     </HashRouter>
   );
 }

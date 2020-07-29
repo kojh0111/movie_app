@@ -1,0 +1,63 @@
+.detail {
+  width: 90vw;
+  background-color: white;
+  margin-bottom: 70px;
+  font-weight: 300;
+  padding: 20px;
+  border-radius: 5px;
+  color: #adaeb9;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 10px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.container {
+  margin-top: 70px;
+  margin-left: 70px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.detail .detail__title {
+  margin-bottom: 5px;
+  font-size: 28px;
+  color: #2c2c2c;
+  font-weight: 800;
+}
+
+.detail .detail__genres {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 0px;
+}
+
+.detail__genres li,
+.detail .detail__year {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.detail .detail__summary {
+  color: #2c2c2c;
+  opacity: 0.8;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1090px) {
+  .container {
+    margin-left: 0;
+  }
+
+  .detail {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 400px 1fr;
+  }
+}
